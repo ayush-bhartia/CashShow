@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' https://v6.exchangerate-api.com/v6/e0eae965c3dbda121a7b2a4b/latest/USD *.v6.exchangerate-api.com; script-src 'self'"
+    />
+    <title>CashShow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Currency Converter</h2>
+    <div id="selector-1">
+      <input type="number" />
+      <select id="currency-selector">
+        <option value="currency">Currency</option>
+      </select>
+    </div>
+    <span> = </span>
+    <div id="selector-2">
+      <input type="number" />
+      <select id="currency-selector1">
+        <option value="currency">Currency</option>
+      </select>
+    </div>
+    <button class="button-15" id="mybtn">Convert</button>
+    <script src="renderer.js"></script>
+  </body>
+</html>
